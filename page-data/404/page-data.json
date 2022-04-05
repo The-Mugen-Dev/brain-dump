@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-gatsby-theme-code-notes-src-templates-404-js",
+    "path": "/404",
+    "result": {"pageContext":{"tags":[{"tag":"image","totalCount":1,"slug":"/image","path":"/tag/image"},{"tag":"optimization","totalCount":1,"slug":"/optimization","path":"/tag/optimization"},{"tag":"tools","totalCount":1,"slug":"/tools","path":"/tag/tools"}],"hasUntagged":false,"basePath":"/"}},
+    "staticQueryHashes": ["1308211557","2744905544","467212769"]}

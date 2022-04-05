@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-gatsby-theme-code-notes-src-templates-tag-page-js",
+    "path": "/tag/image",
+    "result": {"data":{"allMdx":{"edges":[{"node":{"id":"c194f551-5998-5f42-a3a9-69d7a3d2038d","frontmatter":{"title":"Useful WebTools","tags":["tools","image","optimization"],"emoji":"🧰","modified":"March 21, 2021","modifiedTimestamp":"2021-03-21T00:00:00.000Z"},"fields":{"slug":"/dev-tools"}}}]}},"pageContext":{"tag":"image","tags":[{"tag":"image","totalCount":1,"slug":"/image","path":"/tag/image"},{"tag":"optimization","totalCount":1,"slug":"/optimization","path":"/tag/optimization"},{"tag":"tools","totalCount":1,"slug":"/tools","path":"/tag/tools"}],"hasUntagged":false,"basePath":"/"}},
+    "staticQueryHashes": ["1308211557","2744905544","467212769"]}
