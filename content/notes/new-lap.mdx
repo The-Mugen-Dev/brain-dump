@@ -1,6 +1,6 @@
 ---
-title: New Lap Setup
-emoji: 🧰
+title: Computer Setup
+emoji: 🏁
 created: 2021-03-21
 modified: 2021-03-21
 tags:
@@ -8,11 +8,23 @@ tags:
 ---
 
 ## Init commands
-- [ ] ```bash xcode-select --install```
-- [ ] Add git ssh
-- [ ] Install xcode if needed
-- [ ] Install Home Brew -> [Homebrew](https://docs.brew.sh/Installation)
-- [ ] Install iTerm2 -> ```bash brew install --cask iterm2```
-- [ ] Install ZSH -> ```bash brew install zsh```
-- [ ] Install OhMyZsh -> ```bash sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
-- [ ] Update theme to af-magic on ~/.zshrc and increase contrast
+- Installing the Xcode Command Line Tools
+```bash
+xcode-select --install
+```
+- Add [Git SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)
+- Install [Homebrew](https://docs.brew.sh/Installation)
+- Install iTerm2
+```bash
+brew install --cask iterm2
+```
+- Install ZSH
+```bash
+brew install zsh
+```
+- Install OhMyZsh
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+- Update OhMyZsh theme to af-magic on `~/.zshrc` and increase minimum background contrast in terminal preference
+- If using Idea products disable "use non-modal commit interface" under Preferences
