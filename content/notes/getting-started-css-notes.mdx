@@ -8,6 +8,12 @@ tags:
 link: https://notes.themugendev.com/getting-starting-with-css
 ---
 
+
+## Tips
+
+- Make your css classes as less specific as general, if you can select your element with less selector go that way, because later you might have to overwrite the selector, this will give you some breathing room
+Make sure you have semantic HTML, this will make you CSS mor manageable
+
 ## Margin
 
 ### Margin collapsing?
@@ -15,3 +21,15 @@ link: https://notes.themugendev.com/getting-starting-with-css
     - The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal), a behavior known as margin collapsing. Note that the margins of floating and absolutely positioned elements never collapse
 
 <iframe class="sample-code-frame" title="Margin collapsing example" id="frame_examples" width="100%" height="350" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing/_sample_.examples.html" loading="lazy"></iframe>
+
+## Accessibility
+
+  - What is aria-hidden:true?
+    - The aria-hidden state indicates whether the element is exposed to an accessibility API.
+  - What is aria-label?
+    - The aria-label attribute defines a string value that labels an interactive element.
+    - Example: Imaging you have a button with an icon that does something, but the icon is not descriptive enough, so the label can help screen reader to provide omre context
+    - Many frameworks implement "sr-only" class that will take out the content of the element visually , but make it available for screen readers
+## Flexbox
+  - Flex-basis:
+    - This property helps you to tell how "flexible" and element should be, it can help you to set the width of the element in a flex context

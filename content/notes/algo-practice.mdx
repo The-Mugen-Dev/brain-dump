@@ -1,0 +1,59 @@
+---
+title: Algorithm Practice Solutions
+emoji: 💡
+created: 2022-10-08
+modified: 2022-10-08
+tags:
+- leetcode
+- data-structures
+- interview
+link: https://www.techinterviewhandbook.org/grind75
+---
+
+### [twoSum](https://leetcode.com/problems/two-sum/)
+
+```js
+/*
+Before coding:
+   - only integer numbers? or negative values?
+
+Approaches
+   - Brute force:
+  - Iterate over all element and create all two number permutation possible
+  - Make the sum of the pair numbers
+  - Go through the result and check against the target
+   - Map solution
+  - Check length of arr for possible break conditions:
+   - if less than 2 nums solution is not possible
+   - if 2 return as result, problem states that we have at least one result
+  - Create a map with all the numbers in the array fast lookups
+   - key: value of the array (we use the value to subtract the value and find out if this number  will sum up to our target)
+   - value: index in the array (keep track of the index position to return it as the result)
+  - Go again through each element
+   - subtract from target your current number
+   - check if the result of the subtraction is in our map
+   - if true
+  - Create a pair using our current index and the value in our map
+
+*/
+var twoSum = function(nums, target) {
+
+    if(nums.length < 2) return false;
+    if(nums.length === 2) return [0,1];
+
+    const map = {};
+    for(const numIndex in nums){
+        map[nums[numIndex]] = numIndex;
+    }
+
+    for(const numIndex in nums){
+        const num = nums[numIndex];
+        const diff = target - num; //What number we need to sum in order to get to the target
+        const indexOfDiff = map[diff]; //Get the index to make sure we don't use the same number twice
+        if(map[diff] && indexOfDiff !== numIndex){
+            return [numIndex,map[diff]]
+        }
+    }
+};
+
+```
