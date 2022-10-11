@@ -1,5 +1,5 @@
 ---
-title: Algorithm Practice Solutions
+title: lgorithm Practice Solutions
 emoji: 💡
 created: 2022-10-08
 modified: 2022-10-08
@@ -57,3 +57,45 @@ var twoSum = function(nums, target) {
 };
 
 ```
+
+### [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+```
+/**
+ * @param {string} s
+ * @return {boolean}
+ * - Check the length of the input, if is odd return false, only even number can return true
+ * - A stack can help us to keep track of the order of each opening a closing elements
+ * - Opening set, this will help us to do quick lockups to check if we need to push
+ * element into the stack.
+ * - Iterate through the elems, if the element is opening push it
+ * - If the element is closing, pop the top of the stack
+ *   and check if the current element it's the matching pair of the current element
+ * - Make sure that there are not left elements in the stack
+ */
+var isValid = function(s) {
+    
+    if(s.length % 2 !== 0) return false;
+    
+    const opening = new Set(['[','{','(']);
+    const matching = {
+        ']':'[',
+        '}':'{',
+        ')':'('
+    };
+    
+    let stack = []; 
+    
+    for(const elm of s){
+        if(opening.has(elm)){
+            stack.push(elm);
+            continue;
+        }
+        if(matching[elm] !== stack.pop()) return false;
+    }
+    return stack.length === 0;
+};
+```
+
+
+
