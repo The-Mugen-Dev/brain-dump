@@ -138,6 +138,35 @@ var mergeTwoLists = function(list1, list2) {
     return head.next;
 };
 ```
+### [Is Palindrome](https://leetcode.com/problems/valid-palindrome)
 
-
+```
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isPalindrome = function (s) {
+    const filterInvalidCharacters = (str) => {
+        return s.toLowerCase()
+            .split('')
+            .filter(c => c >= 'a' && c <= 'z' || c >= '0' && c <= '9')
+    }
+    const filteredPhrase = filterInvalidCharacters(s);
+    const phraseLength = filteredPhrase.length - 1;
+    
+    /*
+        Helper pointer while comparing the letters
+        - Position them at the start and end of the word/phrase
+    */
+    let left = 0;
+    let right = phraseLength;
+    
+    //Iterate until the middle of the phrase
+    for (let i = 0; i < phraseLength / 2; i++, left++, right--) {
+        if (left > right) return true;
+        if (filteredPhrase[left] !== filteredPhrase[right]) return false;
+    }
+    return true;
+};
+```
 
