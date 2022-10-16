@@ -169,4 +169,38 @@ var isPalindrome = function (s) {
     return true;
 };
 ```
-
+### [Invert a Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+```js 
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ * Solution
+ * - Do a BFS Traversal
+ *  - For each not move left child node to right and right to left
+ */
+var invertTree = function(root) {
+    
+    if(!root) return root;
+    const head = root;
+    const queue = [root];
+    
+    while(queue.length > 0){
+        let current = queue.shift();
+        let tmp = current.left;
+        current.left = current.right;
+        current.right = tmp;
+        
+        if(current.left) queue.push(current.left);
+        if(current.right) queue.push(current.right);        
+    }
+    return head;
+};
+```
