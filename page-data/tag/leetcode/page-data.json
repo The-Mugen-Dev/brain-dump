@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-gatsby-theme-code-notes-src-templates-tag-page-js",
+    "path": "/tag/leetcode",
+    "result": {"data":{"allMdx":{"edges":[{"node":{"id":"9b0426c0-120b-5b0a-8788-fc18b335e68b","frontmatter":{"title":"Algorithm Practice Solutions","tags":["leetcode","data-structures","interview"],"emoji":"💡","modified":"October 8, 2022","modifiedTimestamp":"2022-10-08T00:00:00.000Z"},"fields":{"slug":"/algo-practice"}}}]}},"pageContext":{"tag":"leetcode","tags":[{"tag":"css","totalCount":1,"slug":"/css","path":"/tag/css"},{"tag":"data-structures","totalCount":1,"slug":"/data-structures","path":"/tag/data-structures"},{"tag":"interview","totalCount":2,"slug":"/interview","path":"/tag/interview"},{"tag":"leetcode","totalCount":1,"slug":"/leetcode","path":"/tag/leetcode"},{"tag":"setup","totalCount":1,"slug":"/setup","path":"/tag/setup"},{"tag":"tools","totalCount":1,"slug":"/tools","path":"/tag/tools"}],"hasUntagged":false,"basePath":"/"}},
+    "staticQueryHashes": ["1308211557","2744905544","467212769"]}
