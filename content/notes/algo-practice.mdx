@@ -184,7 +184,9 @@ var isPalindrome = function (s) {
  * @return {TreeNode}
  * Solution
  * - Do a BFS Traversal
- *  - For each not move left child node to right and right to left
+ *  - Validate input, make sure is not invalid
+ *  - For each node move left child node to right and right to left
+ *  - Push existen child node to the queue for the BFS traversal
  */
 var invertTree = function(root) {
     
